@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <link rel="stylesheet"  href="./styles/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prociono&family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Laila:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar_lumi">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex items-center justify-between h-full">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img class="h-16 w-auto" src="./img/logo_2.gif" alt="Your Company">
+                <a class="text-black-300 px-4 py-4 text-sm font-medium" id="laila-light" style="font-size: 20px;" >MICABA</a>
+            </div>
+    
+            <!-- Mobile menu button -->
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-black-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white sm:hidden" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!-- Icon when menu is open -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+    
+            <!-- Desktop menu -->
+            <div class="hidden sm:block flex space-x-6">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white rounded-md px-4 py-4 text-sm font-medium" aria-current="page" id="laila-light">Dashboard</a>
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white rounded-md px-4 py-4 text-sm font-medium" id="laila-light">Team</a>
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white rounded-md px-4 py-4 text-sm font-medium" id="laila-light">Projects</a>
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white rounded-md px-4 py-4 text-sm font-medium" id="laila-light">Calendar</a>
+            </div>
+        </div>
+    
+        <!-- Mobile menu, show/hide based on menu state -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white block rounded-md px-4 py-4 text-base font-medium" aria-current="page" id="laila-light">Dashboard</a>
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white block rounded-md px-4 py-4 text-base font-medium" id="laila-light">Team</a>
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white block rounded-md px-4 py-4 text-base font-medium" id="laila-light">Projects</a>
+                <a href="#" class="text-black-300 hover:bg-gray-700 hover:text-white block rounded-md px-4 py-4 text-base font-medium" id="laila-light">Calendar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="Banner">
+        <div class="hero-section">
+            <video autoplay muted loop id="bg-video">
+                <source src="/videos/mesa_caribe.mp4" type="video/mp4">
+                Tu navegador no admite videos HTML5.
+            </video>
+            <div class="wrap-hero-section">
+                <h1>Transformando cada ocasión en una celebración inolvidable</h1>
+                <p>porque cada evento es una oportunidad para crear recuerdos que durarán toda la vida</p>
+                <br/>
+                <p id="freehand-regular">MICABA</p>
+            </div>
+        </div>
+    </section>
+    <!-- SOBRE NOSOTROS -->
+   <div style="background-color: blue;">
+    <h1>dsxsxs</h1>
+   </div>
+
+</body>
+</html>
